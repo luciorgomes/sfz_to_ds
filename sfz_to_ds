@@ -1,0 +1,3 @@
+#!/bin/sh
+python ./sfz_to_ds.py
+
