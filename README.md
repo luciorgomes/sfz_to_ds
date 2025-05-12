@@ -1,6 +1,6 @@
 # Sfz to Decentsampler
 
-Convert sfz files to decentsampler format.
+Convert sfz files to Decentsampler format.
 
 ![Captura de imagem_20250511_213715](https://github.com/user-attachments/assets/f471ccc1-eeba-4169-ae7a-94d1bbf1ebf7)
 
@@ -20,8 +20,9 @@ If you create a symlink in the DecentSampler folder to the Sfz folder you can us
 
 It's a simple script, it may will not work in more complex .Sfz files
 
-Requirements:
-Python 3
-WxPython
+## Requirements
+- Python 3
+- WxPython
+
 
 
