@@ -217,6 +217,15 @@ def sfz_to_decentsampler(regions, output_path, effects):
 class SfzToDs(MyFrame):
     def __init__(self, *args, **kwds):
         MyFrame.__init__(self, *args, **kwds)
+        self.set_size()
+
+    def set_size(self):
+        '''Define o tamanho da janela de acordo com o ambiente de trabalho'''
+        de = os.environ.get('DESKTOP_SESSION')
+        if de == 'plasma': # kde
+            self.SetSize((726, 320))
+        else: # tested only with 'gnome':
+            self.SetSize((765, 360))
 
 
     def select_file(self, event):  # wxGlade: MyFrame.<event_handler>
